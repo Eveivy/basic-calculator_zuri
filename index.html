@@ -12,37 +12,41 @@
 </head>
 
 <body>
-    <form class="container" id="formEl">
+    <div class="container" id="formEl">
         <div class="input-div">
             <input type="tel" name="input" id="input">
         </div>
-        <div class="buttons">
-            <div class="first-set">
-                <button>7</button>
-                <button>8</button>
-                <button>9</button>
-                <button>-</button>
+        <div class="buttons" id="buttons">
+            <div class="number" id="numbers">
+                <div class="set">
+                    <button>0</button>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>4</button>
+                </div>
+                <div class="set">
+                    <button>5</button>
+                    <button>6</button>
+                    <button>7</button>
+                    <button>8</button>
+                    <button>9</button>
+                </div>
             </div>
-            <div class="second-set">
-                <button>4</button>
-                <button>5</button>
-                <button>6</button>
-                <button>x</button>
-            </div>
-            <div class="third-set">
-                <button>1</button>
-                <button>2</button>
-                <button>3</button>
+
+            <div class="signs" id="signs">
                 <button>+</button>
-            </div> 
-            <div class="fourth-set">
-                <button>C</button>
-                <button>0</button>
+                <button>-</button>
+                <button>*</button>
                 <button>/</button>
-                <button>=</button>
-            </div> 
+            </div>
+            <div id="action" style="display: flex; justify-content: center;">
+                <button onclick="clearInput()">clear</button>
+                <button onclick="del()">del</button>
+                <button onclick="calculate()">=</button>
+            </div>
         </div>
-    </form>
+    </div>
 
     <script src="./script/main.js"></script>
 </body>
